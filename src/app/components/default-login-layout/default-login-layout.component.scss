@@ -45,10 +45,15 @@ main {
     background-color: transparent;
     cursor: pointer;
 
+    &:disabled {
+      opacity: 0.1;
+      cursor: not-allowed;
+    }
+
     &.primary-btn {
         background-color: $primary-color;
         color: white;
-        box-shadow: 0px 8px 12px rgba(148, 64.3,255,0.2);
+        box-shadow: 0px 8px 12px rgba(148, 64,255,0.2);
     }
 
         &.secondary-btn {
@@ -78,5 +83,4 @@ main {
             background-color: $gray-bg;
         }
     }
-
 }

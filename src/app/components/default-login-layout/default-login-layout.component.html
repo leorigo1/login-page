@@ -10,7 +10,12 @@
             <div></div>
         </div>
         
-        <button class="secondary-btn"(click)="navigate()">{{secondaryBtnText}}</button>
+        <button
+         class="secondary-btn"
+         (click)="navigate()"
+         [disabled]="disablePrimaryBtn"
+         >
+         {{secondaryBtnText}}</button>
     </section>
 
     <section>
