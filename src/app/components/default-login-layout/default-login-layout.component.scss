@@ -1,0 +1,31 @@
+@import "../../../styles/variables.scss";
+
+main {
+  width: 100%;
+  height: 100vh; // ocupa a tela toda
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; // cria contexto para o position absoluto dos filhos
+
+  section {
+    &.login-part {
+      position: relative; // mantém o login "na frente"
+      z-index: 2; // garante que esteja acima do fundo
+      background: rgba(255, 255, 255, 0.85); // se quiser um leve fundo translúcido
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    }
+
+    .walppaper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; // a imagem preenche sem distorcer
+      z-index: 1; // fica atrás do login
+    }
+  }
+}
