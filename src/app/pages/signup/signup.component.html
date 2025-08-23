@@ -1,0 +1,49 @@
+<app-default-login-layout
+    title="Crie agora sua conta!"
+    primaryBtnText = "Sign up now"
+    secondaryBtnText = "Login now"
+    (submit)="submit()"
+    (navigate)="navigate()"
+    [disablePrimaryBtn]="!signupForm.valid"
+>
+    <form [formGroup]="signupForm">
+
+             <app-primary-input
+            formControlName="name"
+            inputName="name"
+            type="text"
+            label="Seu nome"
+            >
+                <img src="/assets/svg/email.svg"/>
+        </app-primary-input>
+
+            <app-primary-input
+            formControlName="email"
+            inputName="email"
+            type="email"
+            label="Email"
+            placeholder="seuemail@gmail.com"
+            >
+                <img src="/assets/svg/email.svg"/>
+        </app-primary-input>
+
+        <app-primary-input
+            formControlName="password"
+            inputName="password"
+            type="password"
+            label="Sua senha"
+            >
+                <img src="/assets/svg/password.svg"/>
+        </app-primary-input>
+
+        <app-primary-input
+            formControlName="passwordConfirm"
+            inputName="passwordConfirm"
+            type="password"
+            label="Confirme sua senha"
+            >
+                <img src="/assets/svg/password.svg"/>
+        </app-primary-input>
+
+    </form>
+</app-default-login-layout>
