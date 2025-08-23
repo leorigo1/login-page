@@ -14,3 +14,34 @@ span {
     color: $secundary-color;
     text-align: end;
 }
+
+.login__icons {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.login__icons img {
+    width: 20px;
+}
+
+.icons__buttons {
+    width: 33.33%;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    cursor: pointer;
+}
+
+.login__icons .icons__buttons:nth-child(1) {
+    background-color: #1B77F3;
+}
+.login__icons .icons__buttons:nth-child(2) {
+    background-color: #ECECEC;
+}
+.login__icons .icons__buttons:nth-child(3) {
+    background-color: #000000;
+}
