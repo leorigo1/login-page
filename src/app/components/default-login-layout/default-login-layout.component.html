@@ -1,6 +1,6 @@
 <main>
     <section class="login-part">
-        <h2>{{ title }}</h2>
+        <h3>{{ title }}</h3>
         <ng-content></ng-content>
         <button class="primary-btn"
          (click)="submit()"
@@ -17,7 +17,6 @@
         <button
          class="secondary-btn"
          (click)="navigate()"
-         [disabled]="disablePrimaryBtn"
          >
          {{secondaryBtnText}}</button>
     </section>
