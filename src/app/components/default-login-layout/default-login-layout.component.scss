@@ -23,6 +23,12 @@ main {
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
       gap: 54px;
       width: 450px;
+
+      h2 {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
     }
 
     .walppaper {

@@ -1,11 +1,27 @@
 <app-default-login-layout
-    title="Crie agora sua conta"
+    title="Registrar"
     primaryBtnText = "Sign up now"
     secondaryBtnText = "Login now"
     (submit)="submit()"
     (navigate)="navigate()"
     [disablePrimaryBtn]="!signupForm.valid"
 >
+    <div class="login__icons">
+            <button type="button" class="icons__buttons">
+                <img src="../../../assets/icons/facebook-icon.png" alt="facebook-icon">
+            </button>
+
+            <button type="button" class="icons__buttons">
+                <img src="../../../assets/icons/google-icon.png" alt="google-icon">
+            </button>
+        
+        <button type="button" class="icons__buttons">
+            <img src="../../../assets/icons/apple-icon.png" alt="apple-icon">
+        </button>
+        </div>
+
+        
+
     <form [formGroup]="signupForm">
 
              <app-primary-input
@@ -45,19 +61,7 @@
                 <img src="/assets/svg/password.svg"/>
         </app-primary-input>
 
-         <div class="login__icons">
-            <button type="button" class="icons__buttons">
-                <img src="../../../assets/icons/facebook-icon.png" alt="facebook-icon">
-            </button>
-
-            <button type="button" class="icons__buttons">
-                <img src="../../../assets/icons/google-icon.png" alt="google-icon">
-            </button>
-        
-        <button type="button" class="icons__buttons">
-            <img src="../../../assets/icons/apple-icon.png" alt="apple-icon">
-        </button>
-        </div>
+         
 
     </form>
 </app-default-login-layout>
